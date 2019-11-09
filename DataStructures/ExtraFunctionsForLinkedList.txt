@@ -1,0 +1,74 @@
+//insert the string into file
+  insertAt(searchWord, index) {
+    if (index < 0 && index > this.size) {
+        return false;
+    }
+    else {
+        var node = new Node(searchWord);
+        var current, previous;
+        current = this.head;
+        /**
+         * add searchWord to first index 
+         **/
+        if (index == 0) {
+            node.next = head;
+            this.head = node;
+        }
+        else {
+            current = this.head;
+            var iteration = 0;
+            while (iteration < index) {
+                iteration++;
+                previous = current;
+                current = current.next;
+            }
+            /** 
+             * adding an searchWord 
+             **/
+            node.next = current;
+            previous.next = node;
+        }
+        this.size++;
+    }
+}
+// remove the item from file
+removeFrom(index) {
+    //remove searchWord from given index  
+    if (index < 0 && index > this.size) {
+        return -1;
+    }
+    else {
+        var current, previous, iteration = 0;
+        current = this.head;
+        previous = curr;
+        /**
+         * deleting first searchWord 
+         **/
+        if (index === 0) {
+            this.head = current.next;
+        }
+        else {
+            while (iteration < index) {
+                iteration++;
+                previous = current;
+                current = current.next;
+            }
+            /** 
+             * remove the searchWord */
+            previous.next = current.next;
+        }
+        this.size--;
+        /**
+         *  return the remove searchWord */
+        return current.searchWord;
+    }
+}
+ //checks if file is empty are not
+   isEmpty() {
+       return this.size == 0;
+   }
+   //checks the string size in file
+   sizeOflist() {
+       console.log(this.size);
+       return this.size;
+   }

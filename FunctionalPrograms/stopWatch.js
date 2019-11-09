@@ -1,30 +1,35 @@
-var Utility=require('../utility/functionalProgramsUtility');
 var readline=require('readline-sync');
-function stopWatch()
-{
-    var startTime=readline.question('Press 1 to start time  =>');
-     {
-        if(startTime=="1")
-        {
-           var start=Utility.getCurrentTime();
-            var stopTime=readline.question('Press 0 to stop time=> ');
-            {
-             if(stopTime=="0")
-             {
-                 var stop=Utility.getCurrentTime();
-                 var res=Utility.elapsedTime(start,stop);
-             }
-             console.log("elapsed Time is = "+res+"sec");
-                  
-            }
-        }
-            else
-        {
-            console.log("invalid input");
-            stopWatch();
-        }
-    
-    
-    }
+var startTimer = 0;
+var stopTimer = 0;
+var elapsed=0;
+
+//to start timer
+function start() {
+    var d=new Date();
+    startTimer = d.getMilliseconds();
+    console.log("Start Time is: " + (startTimer));
 }
-stopWatch();
+
+// to stop timer
+function stop() {
+    var d=new Date();
+    stopTimer = d.getMilliseconds();
+    console.log("Stop Time is: " + (stopTimer));
+}
+
+function getElapsedTime() {
+    elapsed = Math.abs(Number(stopTimer) - Number(startTimer));
+    return elapsed;
+}
+var readline = require("readline-sync");
+readline.question("Press 'Enter' to Start Time: ");
+start(); //to start the time call start method
+
+readline.question("Press 'Enter' to Stop Time: ");
+stop();  // to stop call stop method
+
+var l = getElapsedTime(); //it will return elapsed time
+
+console.log("Total Time Elapsed(in millisec) is:" + l);
+console.log("Converting millisec to seconds: " + (Number(l) / 100) + " sec"); //converting millisecond to seconds
+

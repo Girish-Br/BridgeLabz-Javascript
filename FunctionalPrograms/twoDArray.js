@@ -1,3 +1,11 @@
+
+/******************************************************************************
+ *  @Purpose        : To read in 2D arrays of booleans,integers or doubles and print them out   
+ *  @file           : 2Darray.js
+ *  @overview       :  to take elements from user for integer,double or boolean and print it in 2D array.
+ *  @author         : GIRISH B R 
+ *  @since          : 02-11-2019
+ ******************************************************************************/
 //to make user interact with script code via console
 var readline = require("readline-sync");
 //take number of rows

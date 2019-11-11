@@ -1,5 +1,12 @@
-/*####################################################################################################
-####################################################################################################*/
+/******************************************************************************
+ *  Execution       :   1. default node         cmd> node fileName.js                 
+ *  Purpose         : TO deploy all the business logic.
+ *  @file           : utility.js
+ *  @overview       : ALl the business logic bus be here.
+ *  @module         : read-line modules are installed
+ *  @author         : GIRISH B R 
+ *  @since          : 02-11-2019
+ ******************************************************************************/
 exports.anagram = (s1, s2) => {
     //checks both char array have same length or not
     if (s1.length != s2.length) {

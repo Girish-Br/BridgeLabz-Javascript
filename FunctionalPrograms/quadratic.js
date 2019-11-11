@@ -1,3 +1,10 @@
+/******************************************************************************
+ *  @Purpose        : To find roots of given equation.   
+ *  @file           : quadratic.js
+ *  @overview       : To take input values of equation from user to get roots for the given equation.
+ *  @author         : GIRISH B R
+ *  @since          : 02-11-2019
+ ******************************************************************************/
 let util=require('../utility/functionalProgramsUtility');
 //to make user interact with script code via console
 var readline = require("readline-sync");

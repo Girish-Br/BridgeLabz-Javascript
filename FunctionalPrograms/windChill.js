@@ -1,3 +1,12 @@
+/******************************************************************************
+ *  @Purpose        : To find windchill through command line   
+ *  @file           : windchill.js
+ *  @overview       : Given the temperature t (in Fahrenheit) and the wind speed v (in miles per hour),
+                      the National Weather Service defines the effective temperature (the wind chill) 
+                       to be calculated.      
+ *  @author         : GIRISH B R
+ *  @since          : 02-11-2019
+ ******************************************************************************/
 let util=require('../utility/functionalProgramsUtility');
 //to make user interact with script code via console
 var readline = require("readline-sync");

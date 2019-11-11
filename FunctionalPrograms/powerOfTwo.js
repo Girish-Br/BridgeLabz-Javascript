@@ -1,6 +1,6 @@
 /******************************************************************************
  *  @Purpose        : To find power of two through command line .   
- *  @file           : powerof2.js
+ *  @file           : powerOfTwo.js
  *  @overview       : To take command line for getting power of two which should not exceed 31.
  *  @author         : GIRISH B R
  *  @since          : 02-11-2019

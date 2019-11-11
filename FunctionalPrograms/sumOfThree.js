@@ -1,6 +1,6 @@
 /******************************************************************************
  *  @Purpose        : To add the number is equal to 0   
- *  @file           : sumof3int.js
+ *  @file           : sumOfThree.js
  *  @overview       :  A program with cubic running time. Read in N integers and counts the 
                         number   of   triples   that   sum   to   exactly   0.
  *  @author         : GIRISH B R

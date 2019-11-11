@@ -1,6 +1,6 @@
 /******************************************************************************
  *  @Purpose        : total random number needed to have all distinct numbers
- *  @file           : coupunNum.js
+ *  @file           : couponNumber.js
  *  @overview       : Given N distinct Coupon Numbers, how many random numbers do you need to generate 
                       distinct coupon number? This program simulates this random process.
  *  @author         : GIRISH B R

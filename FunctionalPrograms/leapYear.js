@@ -1,6 +1,6 @@
 /******************************************************************************
  *  @Purpose        : To check if year is leap year or not.   
- *  @file           : leapyear.js
+ *  @file           : leapYear.js
  *  @overview       : To take year from user which must be divisible by 4 and 400 and 
                         must not divisible by 100 if by 4 and print leap year.
  *  @author         : GIRISH B R

@@ -1,6 +1,6 @@
   /******************************************************************************
  *  @Purpose        : To count percentage of heads and tails.
- *  @file           : flipcoin.js
+ *  @file           : flipCoin.js
  *  @overview       : To flip a coin N no. of times and randomly generate a number 
                         and print percentage of heads and tails  
  *  @author         : GIRISH B R

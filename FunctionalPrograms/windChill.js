@@ -1,6 +1,6 @@
 /******************************************************************************
  *  @Purpose        : To find windchill through command line   
- *  @file           : windchill.js
+ *  @file           : windChill.js
  *  @overview       : Given the temperature t (in Fahrenheit) and the wind speed v (in miles per hour),
                       the National Weather Service defines the effective temperature (the wind chill) 
                        to be calculated.      

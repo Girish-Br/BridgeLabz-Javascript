@@ -1,6 +1,6 @@
 /******************************************************************************
  *  @Purpose        : To find prime factors of a number.
- *  @file           : factors.js
+ *  @file           : factorsOfNumber.js
  *  @overview       : To take number from user and find its factor and print it in array. 
  *  @author         : GIRISH B R
  *  @since          : 02-11-2019

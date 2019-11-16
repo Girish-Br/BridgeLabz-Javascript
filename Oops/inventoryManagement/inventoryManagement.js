@@ -1,23 +1,22 @@
 /*************************************************************************************************
  *  @Purpose        : To create the JSON from Inventory Object and output the JSON String.     
- *  @file           : stockAccManagement.js
- *  @overview       : To Extend the inventory program to Create InventoryManager to manage the Inventory.
-                      The Inventory Manager will use InventoryFactory to create Inventory Object from JSON.
-                      The InventoryManager will call each Inventory Object in its list to calculate the Inventory
-                      Price and then call the Inventory Object to return the JSON String.
+ *  @file           : inventoryManagement.js
+ *  @overview       : Here we extend dataManagement program to maintain the contents of it by adding
+ *                    deleting,displaying.
  *  @author         : GIRISH B R 
  *  @since          : 12-11-2019
  ***************************************************************************************************/
 //importing filestream
- var fs = require('fs');
+ let fs = require('fs');
+ let inventory=require("./inventoryManagementBLogic");
 // using prompt-sync asking user to enter the input
-var prompt = require('prompt-sync')();
+let prompt = require('prompt-sync')();
 //reading data from a json file
-var data = fs.readFileSync('./inventoryManagement.json');
+let data = fs.readFileSync('./inventoryManagement.json');
 //printing data from json file
 console.log("Data in a json file is\n" + data);
 //for holding the object
-var inventoryJson = JSON.parse(data);
+let inventoryJson = JSON.parse(data);
 console.log(" ");
 var flag=true;
 var nameRestriction = /[a-z]/ig;
@@ -47,7 +46,7 @@ function inventoryManage() {
                 })
             }
             console.log(inventoryJson);
-            writeToFile(inventoryJson);
+            inventory.writeToFile(inventoryJson);
             break;
         case 2:
             /**
@@ -71,14 +70,14 @@ function inventoryManage() {
                 inventoryJson.forEach(element => {
                 console.log(element);
                 });
-                writeToFile(inventoryJson); //update the json file
+                inventory.writeToFile(inventoryJson); //update the json file
             }
             else {
                 console.log("Entered Item not found")
             }
              break;
             case 3:
-                    show(); //reading json file and print it
+                    inventory.show(); //reading json file and print it
                     var updateItem = prompt("Please enter the name of item you want to Edit from the inventory: ");
                     if (nameRestriction.test(updateItem)==false) throw "invalid name input"
                     var index=-1;
@@ -95,7 +94,7 @@ function inventoryManage() {
                         if (isNaN(price) && price<0) throw "invalid input"  
                         inventoryJson[index].weight=parseInt(weight); //update weight
                         inventoryJson[index].price=parseInt(price);   //update price
-                        writeToFile(inventoryJson); //write in file with updated data
+                        inventory.writeToFile(inventoryJson); //write in file with updated data
                     }
                     else {
                         console.log("Entered Item not found")
@@ -103,7 +102,7 @@ function inventoryManage() {
 
                 break;
             case 4:
-                show();     //reading json file and print it
+                inventory.show();     //reading json file and print it
                 break;
             case 5:
                 flag=false;
@@ -113,31 +112,6 @@ function inventoryManage() {
                 console.log("Invalid choice");
 }
 }
-}
-function writeToFile(inventoryJson)
-{
-    //writing inventoryJson on json file
-    fs.writeFileSync('inventoryManagement.json', JSON.stringify(inventoryJson), 'utf-8', function (err) {
-    if (err) throw err
-    console.log('Successfully Done!');
-    })
-}
-//reading json file and print it
-function show(){
-    var data = fs.readFileSync('inventoryManagement.json', 'utf-8');
-    console.log("All items in inventory is\n" + data);
-    inventoryJson = JSON.parse(data);
-    var price=totalPrice(inventoryJson);
-    console.log("Total Stock Value : "+price+ "Rs");
-
-}  
-function totalPrice(inventoryJson)
-{
-    var stockTotalPrice=0;
-    inventoryJson.forEach(element => {
-        stockTotalPrice=stockTotalPrice+(element.weight*element.price);
-        });
-    return stockTotalPrice;
 }
 // calling function
 inventoryManage();

@@ -1,3 +1,10 @@
+/*************************************************************************************************
+*  @Purpose        : To create a proper companyShares program to maintain shares of company           
+*  @file           : companyShares.js
+*  @overview       : Here we can add new company,delete and display the company with its shares and price.
+*  @author         : GIRISH B R
+*  @since          : 11-11-2019
+***************************************************************************************************/
 //import filestream
 const fs = require('fs');
 //import linkedlist file
@@ -10,7 +17,7 @@ var list = new linkedList();
 var data = fs.readFileSync('./company.json')
 //converting data to obj type
 var companySharesJson = JSON.parse(data);
-function sharesManage() {
+function sharesManagement() {
     const menu = `1. Add new Company
     2. Remove Company
     3. Display
@@ -38,8 +45,8 @@ function sharesManage() {
                 //case 2 for deleting item
             case 2:
                 console.log(companySharesJson);
-                var deleteCompnay = prompt("Enter the company you want to delete : ");
-                var flag = list.delete(deleteCompnay);
+                var deleteCompany = prompt("Enter the company you want to delete : ");
+                var flag = list.delete(deleteCompany);
                 if (flag == true) {
                     console.log("Deleted")
                     companySharesJson = list.getData();
@@ -60,4 +67,4 @@ function sharesManage() {
     }
 }
 //call function
-sharesManage();
+sharesManagement();

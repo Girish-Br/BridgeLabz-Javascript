@@ -1,4 +1,6 @@
+//import promise
 var promise=require('promise');
+//writing function
 function add (x, y) {
     console.log("value of x: " + x + " and value of y: " + y);
     return new promise((resolve, reject) => {
@@ -9,4 +11,5 @@ function add (x, y) {
         }
     })
  }
+ //export function
  exports.add = add;

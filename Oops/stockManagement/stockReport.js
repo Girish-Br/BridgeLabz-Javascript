@@ -14,5 +14,5 @@ var obj = new util();
 //import json file
 obj.jsonParse('./stockManagement.json');
 //call functions
-obj.disp();
+obj.display();
 obj.totalValue();

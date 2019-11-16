@@ -1,6 +1,6 @@
 /*************************************************************************************************
  *  @Purpose        : To create the JSON from Inventory Object and output the JSON String.     
- *  @file           : inventoryDataManagement.js
+ *  @file           : dataManagement.js
  *  @overview       : Create a JSON file having Inventory Details for Rice, Pulses and Wheats 
                       with properties name, weight, price per kg.Then read Json file and calculate 
                       value of each inventory. 
@@ -31,13 +31,14 @@ for(let i=0;i<length;i++){
     console.log("total price of rice is:"+total);
 }
 console.log("resultant of Pulses: ");
-let length=obj.Pulses.length;
-for(let i=0;i<length;i++){
+let length1=obj.Pulses.length;
+for(let i=0;i<length1;i++){
     let name=obj.Pulses[i].name;
     let weight=obj.Pulses[i].weight;
     let price=obj.Pulses[i].price;
-    let total=company.total();
+    let company=new util(name,weight,price);
+    let total1=company.total();
     //printing data and its total price
     console.log("Name:"+name+"weight:"+weight+"price:"+price);
-    console.log("total price of rice is:"+total)
+    console.log("total price of rice is:"+total1)
 }

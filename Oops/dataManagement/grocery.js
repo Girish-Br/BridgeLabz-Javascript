@@ -1,3 +1,9 @@
+/*************************************************************************************************
+*  @Purpose        : To create a proper Business logic for dataManagement code          
+*  @file           : grocery.js
+*  @author         : GIRISH B R
+*  @since          : 11-11-2019
+***************************************************************************************************/
 class Grocery{
     constructor(name,weight,price){
         this.name=name;

@@ -1,17 +1,15 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple app",
   "main": "demo.js",
   "scripts": {
-    "test": "mocha --timeout 10000"
+    "test": "mocha"
   },
   "author": "Girish B R",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^6.2.2",
-    "promise": "^8.0.3",
-    "promises": "^0.2.5"
+    "mocha": "^6.2.2"
   }
 }

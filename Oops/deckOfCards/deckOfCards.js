@@ -47,4 +47,5 @@ function deckOfCards() {
     }
     console.log(players); //Print the distributed cards for 4 player
 }
+//call function()
 deckOfCards();

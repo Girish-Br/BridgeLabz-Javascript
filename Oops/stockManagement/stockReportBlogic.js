@@ -1,3 +1,9 @@
+/*************************************************************************************************
+*  @Purpose        : To create a proper business logic for stock report code          
+*  @file           : stockReportBlogic.js
+*  @author         : GIRISH B R
+*  @since          : 14-11-2019
+***************************************************************************************************/
 //import filestream
 const fs = require('fs');
 //export Inventory class
@@ -12,8 +18,8 @@ module.exports = class Inventory {
         this.fileName = fileName;
         this.content = JSON.parse(fs.readFileSync(fileName));
     }
-    //used to display
-    disp() {
+    //used to displaylay
+    display() {
         this.content.Stock.forEach(element => {
             console.log(element);
         });
@@ -32,5 +38,6 @@ module.exports = class Inventory {
             console.log(`${element.stockName} is rs ${element.price * element.numberOfShare}`);
         });
         console.log(`Total value of stocks : ${ sum } Rs`);
+        return this.totalValue;
     }
 }

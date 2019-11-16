@@ -1,11 +1,11 @@
 /*************************************************************************************************
  *  @Purpose        : To create the JSON from Inventory Object and output the JSON String.      
- *  @file           : stockAccount.js
+ *  @file           : commercialDataProcessing.js
  *  @author         : GIRISH B R 
  *  @since          : 13-11-2019
  ***************************************************************************************************/
 //import filestream
- const fs = require('fs');
+let fs=require('fs');
  //node-module prompt-sync
 const prompt = require('prompt-sync')();
 //read file from json
@@ -24,7 +24,7 @@ class stockAccount {
     buy() {
         try {
             // add shares of stock to account 
-            let stock = prompt('enter number of stocks: ');
+            var stock = prompt('enter number of stocks: ');
             if (isNaN(stock)) throw "invalid input"
         } catch (err) {
             console.log(err);
@@ -46,6 +46,7 @@ class stockAccount {
             } catch (err) {
                 console.log(err);
             }
+            writeFileSync('./commercialData.json', JSON.stringify(arrayOfObjects), 'utf-8')
         }
     }
     //logic for selling
@@ -53,14 +54,15 @@ class stockAccount {
         // subtract shares of stock from account 
         let i = prompt('which index u want to sell ? : ');
         //deleting the element 
-        delete arrayOfObjects[i];
+        arrayOfObjects.splice(i,1);
         console.log(arrayOfObjects);
+        writeFileSync('./commercialData.json', JSON.stringify(arrayOfObjects), 'utf-8')
     }
     // to save data to file
     save() {
         //save account to file 
         let res = JSON.stringify(arrayOfObjects)
-        fs.writeFileSync('./commercialData.json', res, 'utf-8')
+        writeFileSync('./commercialData.json', JSON.stringify(res), 'utf-8')
     }
     // to display the data 
     printReport() {

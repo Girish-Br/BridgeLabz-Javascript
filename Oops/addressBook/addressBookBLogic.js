@@ -1,5 +1,12 @@
-const fs=require('fs');
-const prompt=require('prompt-Sync')();
+/*************************************************************************************************
+*  @Purpose        : To create a proper business logic for addressBook code          
+*  @file           : addressBLogic.js
+*  @author         : GIRISH B R
+*  @since          : 11-11-2019
+***************************************************************************************************/
+let fs=require('fs');
+//import prompt for user input
+let prompt=require('prompt-Sync')();
 class Address {
     //create a constructor to initialize and store values
     constructor(address) {
@@ -49,12 +56,13 @@ class Address {
             }
         })
         // write file into json
-        fs.writeFile('addressook.json', JSON.stringify(this.address), 'utf-8', function (err) {
+        writeFile('addressook.json', JSON.stringify(this.address), 'utf-8', function (err) {
             if (err) throw err
             console.log('Done!');
         })
-        console.log("Address updated succesfully!");
-        console.log("Your information as per our record is: \r\n First Name: " + name + "\r\nLast Name: " + lastName + "\r\nStreet: " + street + "\r\nCity: " + city + "\r\nState: " + state + "\r\nNationality: " + nation);
+        console.log(`Address updated succesfully!`);
+        console.log(`Your information as per our record is: \r\n First Name: ${ name } \r\nLast Name:  ${ lastName } \r\nStreet: ${street} \r\nCity:  ${ city } \r\nState:  ${ state } \r\nNationality:  ${ nation}`);
+       return name;
     }
     //comaparing name of each object and sort alphabetically
     compare1(a, b) {
@@ -76,8 +84,8 @@ class Address {
             for (let i = 0; i < this.address.Person.length; i++) {
                 console.log(this.address.Person[i]);
             }
-            console.log("Welcome!!");
-           let update = prompt("Please enter the name of profile: ");
+            console.log(`Welcome!!`);
+           let update = prompt(`Please enter the name of profile: `);
             for (let k = 0; k < this.address.Person.length; k++) {
                 if (update == this.address.Person[k].Name) {
                     temp = k;
@@ -230,14 +238,14 @@ class Address {
                                     save();
                                     break;
                                 case 7:
-                                    console.log("ThankYou!");
+                                    console.log(`ThankYou!`);
                                     //address();
                                     break;
                             }
                             break;
                         case 2:
                             //to delete profile
-                           let update = prompt("Please enter the index you want to delete: ");
+                           let update = prompt(`Please enter the index you want to delete: `);
                             delete this.address.Person[update];
                             for (let j = 0; j < address.Person.length; j++) {
                                 if (this.address.Person[j] == null) {
@@ -245,7 +253,7 @@ class Address {
                                 }
                             }
                             // write file
-                            fs.writeFile('addressook.json', JSON.stringify(this.address), 'utf-8', function (err) {
+                            writeFile('addressook.json', JSON.stringify(this.address), 'utf-8', function (err) {
                                 if (err) throw err
                                 console.log('Done!')
                             })
@@ -258,7 +266,7 @@ class Address {
                         case 4:
                             //save file into json
                             function save() {
-                                fs.writeFile('addressook.json', JSON.stringify(this.address), 'utf-8', function (err) {
+                                writeFile('addressook.json', JSON.stringify(this.address), 'utf-8', function (err) {
                                     if (err) throw err
                                     console.log('File Saved!!')
                                 })
@@ -266,22 +274,22 @@ class Address {
                             save();
                             break;
                         case 5:
-                            console.log("ThankYou!!");
+                            console.log(`ThankYou!!`);
                             //address();
                             break;
                         default:
-                            console.log("Please enter valid option");
+                            console.log(`Please enter valid option`);
                             break;
                     }
                 }
             } if (temp == -1) {
                 //check if name is available in json or name
-                console.log("Profile unavailable!!Please create new one.");
+                console.log(`Profile unavailable!!Please create new one.`);
                 //address();
             }
         }
         else {
-            console.log("No profiles to display!!Please create a new profile!");
+            console.log(`No profiles to display!!Please create a new profile!`);
             this.createAddress();
         }
     }

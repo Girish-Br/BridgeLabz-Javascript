@@ -1,1 +1,1 @@
-[{"stockName":"mango","Number_of_Kgs":"15","Price":"50"},{"stockName":"apple","Number_of_Kgs":"45","Price":"2"},{"stockName":"ragi","Number_of_Kgs":"5","Price":"40"}]
+[{"stockName":"mango","Number_of_Kgs":"15","Price":"50"},{"stockName":"apple","Number_of_Kgs":"45","Price":"2"},{"stockName":"ragi","Number_of_Kgs":"5","Price":"40"},{"name":"ragi","weight":5,"price":50}]

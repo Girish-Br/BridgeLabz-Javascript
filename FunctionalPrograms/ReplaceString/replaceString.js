@@ -5,7 +5,7 @@
  *  @overview       : diplayname takes the userinput and print it with some sentence
  *  @author         : GIRISH B R 
  *  @since          : 02-11-2019
- ******************************************************************************/
+ *******************************************************************************/
 //to make user interact with script code via console
 var readline = require("readline-sync");
 //explains what input should be given

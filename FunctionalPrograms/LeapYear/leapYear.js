@@ -5,7 +5,7 @@
                         must not divisible by 100 if by 4 and print leap year.
  *  @author         : GIRISH B R
  *  @since          : 02-11-2019
- ******************************************************************************/
+ *******************************************************************************/
 let util = require('../../utility/functionalProgramsUtility');
 //to make user interact with script code via console
 var readline = require("readline-Sync");

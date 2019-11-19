@@ -6,7 +6,7 @@
  *  @module         : read-line modules are installed
  *  @author         : GIRISH B R 
  *  @since          : 08-11-2019
- ******************************************************************************/
+ *******************************************************************************/
 exports.generatePrimeNumbers = (initial, limit) => {
     var primeNumbers = new Array();
     for (let i = initial; i <= limit; i++) {

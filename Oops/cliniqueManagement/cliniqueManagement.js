@@ -32,29 +32,17 @@ function clinique() {
                     console.log("*Doctors Available*");
                     console.log(clinique.Doctors);
                     var Name = prompt('Patient Name: ');
-                    if (nameRestriction.test(Name) == false) {
-                        console.log("Invalid name!");
-                        return false;
-                    }
-                    // generating ID using random function 
+                    if (nameRestriction.test(Name) == false) throw "invalid name";
+                     // generating ID using random function 
                     var ID = parseInt(Math.random() * 1000);
                     var mobNo = prompt('Mobile Number: ');
                     // validating phone number
-                    if (contactRestriction.test(mobNo) == false || mobNo.length != 10) {
-                        console.log("Invalid mobile number!");
-                        return false;
-                    }
+                    if (contactRestriction.test(mobNo) == false || mobNo.length != 10) throw "invalid mobile number"
                     var Age = prompt('Age: ');
                     //validate age
-                    if (contactRestriction.test(Age) == false) {
-                        console.log("Inappropriate age!");
-                        return false;
-                    }
+                    if (contactRestriction.test(Age) == false) throw "invalid age"
                     var Appointed_To = prompt('whose appointment u want: ');
-                    if (nameRestriction.test(Appointed_To) == false) {
-                        console.log("Invalid name!");
-                        return false;
-                    }
+                    if (nameRestriction.test(Appointed_To) == false) throw "invalid name"
                     //push each value into the json array
                     clinique.Patients.push(
                         {

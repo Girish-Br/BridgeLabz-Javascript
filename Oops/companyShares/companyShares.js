@@ -33,8 +33,11 @@ function sharesManagement() {
         switch (parseInt(choice)) {
             case 1:
                 var company = prompt("Enter the new company name: ");
+                if(!isNan(company)) throw "inavlid company name"
                 var numberOfshares = prompt("Enter the Number of shares: ");
+                if(isNan(numberOfshares)) throw "inavlid number of shares"
                 var sharePrice = prompt("Enter the share price: ");
+                if(isNan(sharePrice)) throw "inavlid share price"
                 //adding the item
                 list.firstAdd(company, Number(numberOfshares), Number(sharePrice));
                 companySharesJson = list.getData();

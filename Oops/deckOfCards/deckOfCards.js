@@ -32,10 +32,11 @@ function deckOfCards() {
         deck[k] = temp;
     }
     let number = prompt(`enter number of players:`);
+    if(isNan(number)) throw "inavlid number "
     // print shuffled deck
     var players = [[], [], [], []];
     let start = 0, end = 9;
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < number; i++) {
         /*
          * @purpose: Distribute cards for each player
          */

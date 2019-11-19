@@ -1,4 +1,4 @@
-//import chai and assert 
+//import chai and assert package
 const assert=require('chai').assert
 //import file
 const stock=require('../Oops/stockManagement/stockReportBlogic')

@@ -1,6 +1,8 @@
+//import chai
 let chai=require("chai");
 let expect=chai.expect;
 let addition=require('./demo');
+//starts test
 describe('addition', function(){
    it('it should add 2 nos', (done)=>{
        addition.add(1,4).then(function(result){

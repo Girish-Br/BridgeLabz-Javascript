@@ -1,5 +1,11 @@
-var primeAnaQueue=require('../utility/dataStructuresProgramsUtility');
-var primeAna=require('../utility/dataStructuresProgramsUtility');
+  /***********************************************
+* @Purpose :to implement prime numbers that are anagrams in queue.
+* @File    :PrimeAnaQueue.js
+* @Author  :Girish B R
+* @Date    :08-11-2019
+************************************************/
+var primeAnaQueue=require('../../utility/dataStructuresProgramsUtility');
+var primeAna=require('../../utility/dataStructuresProgramsUtility');
 var queueLink = new primeAnaQueue.QueuedLinkedList;
 var primes = [[],[],[],[],[],[],[],[],[],[]];
 var initial = 0;

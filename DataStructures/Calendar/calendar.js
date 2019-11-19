@@ -1,5 +1,11 @@
+/************************************ 
+* @Purpose : to create calendar and display
+* @File   : calendar.js
+* @Author : Girish B R
+* @Date   : 5-11-2019
+*************************************/
 var readline=require("readline-sync");
-var calendar = require('../utility/dataStructuresProgramsUtility');
+var calendar = require('../../utility/dataStructuresProgramsUtility');
 /*
 * it will prints the month
 */

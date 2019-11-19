@@ -1,5 +1,11 @@
-var primeAnaStack=require('../utility/dataStructuresProgramsUtility');
-var primeAna=require('../utility/dataStructuresProgramsUtility');
+  /***********************************************
+* @Purpose :to implement prime numbers that are anagrams in stack.
+* @File    :PrimeAnaStack.js
+* @Author  :Girish B R
+* @Date    :08-11-2019
+************************************************/
+var primeAnaStack=require('../../utility/dataStructuresProgramsUtility');
+var primeAna=require('../../utility/dataStructuresProgramsUtility');
 function printAnaprimes()
 {
     var stackLink = new primeAnaStack.StackedLink;

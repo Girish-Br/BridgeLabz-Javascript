@@ -1,3 +1,8 @@
+/************************************ 
+* @Purpose : to implement hashing
+* @Author : Girish B R
+* @Date   : 6-11-2019
+*************************************/
 function hashing() {
     /*
     * it will access or read the file

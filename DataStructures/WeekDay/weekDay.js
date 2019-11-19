@@ -1,6 +1,12 @@
+/************************************ 
+* @Purpose : to create calendar
+* @File   : weekDay.js
+* @Author : Girish B R
+* @Date   : 5-11-2019
+*************************************/
 var readline=require("readline-sync");
-var calendar=require('../utility/dataStructuresProgramsUtility');
-var linkedQueue=require('../utility/dataStructuresProgramsUtility');
+var calendar=require('../../utility/dataStructuresProgramsUtility');
+var linkedQueue=require('../../utility/dataStructuresProgramsUtility');
 /*
 * creating calender function to create any new node with null values.
  */

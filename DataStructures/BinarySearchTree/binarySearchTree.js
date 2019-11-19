@@ -1,4 +1,10 @@
-var binaryTree=require('../utility/dataStructuresProgramsUtility');
+/****************************************
+* @Purpose :Count the binary search tree for given node. 
+* @file   :binarySearchTree.js
+* @author :Girish B R
+* @Date   :08-11-2019
+****************************************/
+var binaryTree=require('../../utility/dataStructuresProgramsUtility');
 function findBSTs() {
     console.log("Enter the number of BinarySearchTrees you  want: ");
     var binarysearchTree = binaryTree.inputread();

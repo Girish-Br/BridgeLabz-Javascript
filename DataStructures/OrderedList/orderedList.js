@@ -1,3 +1,9 @@
+  /************************************************
+* @purpose :Business logic of ordered linked list.
+* @file   :orderedLinkedlist.js
+* @author :Girish B R
+* @date   :08-11-2019
+***********************************************/
 //built in library for read file
 const fs = require("fs"); 
 //import the file 

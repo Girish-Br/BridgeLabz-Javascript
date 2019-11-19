@@ -1,4 +1,10 @@
-var primeValues=require('../utility/dataStructuresProgramsUtility');
+/************************************ 
+* @Purpose : to display prime numbers in 2D array
+* @File   : prime2DArray.js
+* @Author : Girish B R
+* @Date   : 6-11-2019
+*************************************/
+var primeValues=require('../../utility/dataStructuresProgramsUtility');
 var primes = new Array(10);
 var initial = 0;
 var final = 100;

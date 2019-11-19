@@ -1,4 +1,10 @@
-let util=require('../utility/algorithmProgramUtility');
+/*************************************
+* @Purpose : Program to generate prime number between 0 to 1000
+* @File    : primeNumbers.js
+* @Author  : Girish B R
+* @Date    : 01-11-2019
+**************************************/
+let util=require('../../utility/algorithmProgramUtility');
 //function to get prime numbers
 var arr=generatePrimeNumbers();
 console.log(arr);

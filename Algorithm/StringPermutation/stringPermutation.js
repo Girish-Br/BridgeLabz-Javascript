@@ -1,3 +1,9 @@
+/***************************************** 
+* @Purpose : To return all permutations of a String using iterative method and Recursion method
+* @File    : stringPermutation.js
+* @Author  : Girish B R
+* @Date    : 30-10-2019
+*****************************************/
 //to make user interact with script code via console
 var readline = require("readline-sync");
 //take input

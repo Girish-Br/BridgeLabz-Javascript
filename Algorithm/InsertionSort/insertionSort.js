@@ -1,4 +1,10 @@
-var util=require('../utility/algorithmProgramUtility')
+/*********************************************
+* @Purpose :  Reads the strings prints them in sorted order using insertion sort. 
+* @File    : insertionSort.js
+* @Author  : Girish B R
+* @Date    : 29-10-2019
+**********************************************/
+var util=require('../../utility/algorithmProgramUtility')
 //to make user interact with script code via console
 var readline = require("readline-sync");
 //take number of strings

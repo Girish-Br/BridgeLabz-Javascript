@@ -1,4 +1,11 @@
-let util=require('../utility/algorithmProgramUtility');
+  /*******************************************
+* @Purpose : Takes a command-line argument N, asks user to think of a number between 0 and N-1, 
+*           where N = 2^n, and always guesses the answer with n questions. 
+* @File    : questionToFindNumber.js
+* @Author  : Girish B R
+* @Date    : 02-11-2019
+*******************************************/
+let util=require('../../utility/algorithmProgramUtility');
 //to make user interact via console
 var readline = require("readline-sync");
 //take range

@@ -3,7 +3,7 @@
 * @File   : factoryPattern.js
 * @Author : Girish B R
 * @Date   : 10-11-2019
-*************************************/
+**************************************/
 //factory method
 function shapeFactory() {
     this.createShape = function (shapeType) {

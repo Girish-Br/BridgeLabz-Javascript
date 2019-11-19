@@ -3,7 +3,7 @@
 * @File   : prortypeDesignPattern.js
 * @Author : Girish B R
 * @Date   : 10-11-2019
-*************************************/
+**************************************/
 //student function
 function student(name,age,add){
     this.name=name;

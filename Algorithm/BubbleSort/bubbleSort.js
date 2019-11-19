@@ -1,4 +1,10 @@
-let util=require('../utility/algorithmProgramUtility');
+/********************************************
+* @Purpose :  Reads in integers prints them in sorted order using Bubble Sort. 
+* @File    : bubbleSort.js
+* @Author  : Girish B R
+* @Date    : 28-10-2019
+********************************************/
+let util=require('../../utility/algorithmProgramUtility');
 //to make user interact with script code via console
 var readline = require("readline-sync");
 //take user input of array

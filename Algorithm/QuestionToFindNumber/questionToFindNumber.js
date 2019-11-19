@@ -1,4 +1,4 @@
-  /*******************************************
+  /********************************************
 * @Purpose : Takes a command-line argument N, asks user to think of a number between 0 and N-1, 
 *           where N = 2^n, and always guesses the answer with n questions. 
 * @File    : questionToFindNumber.js

@@ -1,4 +1,4 @@
-/***************************************** 
+/******************************************* 
 * @Purpose : To return all permutations of a String using iterative method and Recursion method
 * @File    : stringPermutation.js
 * @Author  : Girish B R

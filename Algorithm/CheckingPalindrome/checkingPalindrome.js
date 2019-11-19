@@ -1,4 +1,4 @@
-  /****************************************
+  /*****************************************
 * @Purpoase :  Find the prime numbers that are Anagram and Palindrome  
 * @Author   : Girish B R
 * @Date     : 02-11-2019

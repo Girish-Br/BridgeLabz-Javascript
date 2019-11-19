@@ -1,4 +1,4 @@
-/************************************ 
+/************************************* 
 * @Purpose : to display prime numbers in 2D array
 * @File   : prime2DArray.js
 * @Author : Girish B R

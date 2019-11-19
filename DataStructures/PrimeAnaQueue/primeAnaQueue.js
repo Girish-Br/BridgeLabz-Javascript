@@ -1,4 +1,4 @@
-  /***********************************************
+  /************************************************
 * @Purpose :to implement prime numbers that are anagrams in queue.
 * @File    :PrimeAnaQueue.js
 * @Author  :Girish B R

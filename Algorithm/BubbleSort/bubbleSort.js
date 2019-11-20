@@ -1,4 +1,4 @@
-/********************************************
+/*********************************************
 * @Purpose :  Reads in integers prints them in sorted order using Bubble Sort. 
 * @File    : bubbleSort.js
 * @Author  : Girish B R

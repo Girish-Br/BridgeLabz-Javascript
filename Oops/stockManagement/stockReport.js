@@ -6,7 +6,7 @@
 * @author       : GIRISH B R
 * @since        : 14-11-2019
 *
-*********************************************************************/
+**********************************************************************/
 //import file
 const util = require('./stockReportBlogic.js');
 //create instance and store it in obj

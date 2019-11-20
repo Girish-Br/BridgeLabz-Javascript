@@ -1,4 +1,4 @@
-//import chai
+//import chai,
 let chai=require("chai");
 let expect=chai.expect;
 let addition=require('./demo');

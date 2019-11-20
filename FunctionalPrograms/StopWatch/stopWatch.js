@@ -5,7 +5,7 @@
                         the start and end clicks
  *  @author         : GIRISH B R
  *  @since          : 02-11-2019
- ******************************************************************************/
+ *******************************************************************************/
 var readline=require('readline-sync');
 var startTimer = 0;
 var stopTimer = 0;

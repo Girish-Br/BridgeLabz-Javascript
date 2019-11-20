@@ -1,4 +1,4 @@
-/************************************ 
+/************************************* 
 * @Purpose : checking palindrome of string using Dequeue
 * @File   : palindromeChecker.js
 * @Author : Girish B R

@@ -1,4 +1,4 @@
-/*************************************
+/**************************************
 * @Purpose : Program to generate prime number between 0 to 1000
 * @File    : primeNumbers.js
 * @Author  : Girish B R

@@ -1,4 +1,4 @@
-/*********************************************
+/**********************************************
 * @Purpose :  Reads the strings prints them in sorted order using insertion sort. 
 * @File    : insertionSort.js
 * @Author  : Girish B R

@@ -1,4 +1,4 @@
-//import fs
+//import file
 let fs=require('fs');
 exports.writeToFile=(inventoryJson)=>{
 {

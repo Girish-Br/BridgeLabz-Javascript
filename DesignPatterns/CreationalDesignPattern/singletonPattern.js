@@ -3,7 +3,7 @@
 * @File   : singletonPattern.js
 * @Author : Girish B R
 * @Date   : 10-11-2019
-*************************************/
+**************************************/
 //declare as var to be private
 var Singleton = (function () {
     var instance;

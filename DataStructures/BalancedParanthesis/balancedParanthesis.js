@@ -1,4 +1,4 @@
-/****************************************
+/*****************************************
 * @Purpose : Balnced paranthesis using stack business logic. 
 * @file   :balancedParanthesis.js
 * @author :Girish B R

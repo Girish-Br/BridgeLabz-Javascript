@@ -3,7 +3,7 @@
 * @File   : mediatorPattern.js
 * @Author : Girish B R
 * @Date   : 10-11-2019
-*************************************/
+**************************************/
 //create class
 class chat {
     //create one constructor

@@ -1,4 +1,4 @@
-/****************************************
+/*****************************************
 * @Purpose :Count the binary search tree for given node. 
 * @file   :binarySearchTree.js
 * @author :Girish B R

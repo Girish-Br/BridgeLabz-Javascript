@@ -1,4 +1,4 @@
-  /*********************************** 
+  /************************************ 
 * @Purpose :  Reads the strings prints them in sorted order using merge sort. 
 * @File    : mergeSort.js
 * @Author  : Girish B R

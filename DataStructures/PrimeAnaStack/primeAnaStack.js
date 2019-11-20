@@ -3,7 +3,7 @@
 * @File    :PrimeAnaStack.js
 * @Author  :Girish B R
 * @Date    :08-11-2019
-************************************************/
+*************************************************/
 var primeAnaStack=require('../../utility/dataStructuresProgramsUtility');
 var primeAna=require('../../utility/dataStructuresProgramsUtility');
 function printAnaprimes()

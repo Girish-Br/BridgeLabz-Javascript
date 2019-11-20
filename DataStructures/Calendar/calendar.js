@@ -1,4 +1,4 @@
-/************************************ 
+/************************************* 
 * @Purpose : to create calendar and display
 * @File   : calendar.js
 * @Author : Girish B R

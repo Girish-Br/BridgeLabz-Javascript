@@ -6,7 +6,7 @@
                       received by the 4 Players.
  *  @author         : GIRISH B R
  *  @since          : 12-11-2019
- ***************************************************************************************************/
+ ****************************************************************************************************/
 //to import prompt to take user
 const prompt = require('prompt-sync')();
 function deckOfCards() {

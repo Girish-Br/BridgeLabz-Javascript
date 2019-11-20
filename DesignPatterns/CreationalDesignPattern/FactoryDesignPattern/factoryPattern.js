@@ -50,11 +50,11 @@ var Circle = function () {
     }
 };
 //instantiated shapeFactory
-var factory = new shapeFactory();
-var rectangle = factory.createShape('rectangle');
-var square = factory.createShape('square');
-var triangle = factory.createShape('triangle');
-var circle = factory.createShape('circle');
+let factory = new shapeFactory();
+let rectangle = factory.createShape('rectangle');
+let square = factory.createShape('square');
+let triangle = factory.createShape('triangle');
+let circle = factory.createShape('circle');
 rectangle.draw();
 square.draw();
 triangle.draw();

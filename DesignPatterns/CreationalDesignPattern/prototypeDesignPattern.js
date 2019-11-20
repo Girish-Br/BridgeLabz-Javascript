@@ -12,7 +12,6 @@ function student(name,age,add){
     this.say=()=>{
         console.log(`Student name is ${this.name} and age is ${this.age} and address is ${this.add} `);
     };
-
 }
 //function to show prototype
 function customerPrototype(proto){
@@ -31,5 +30,8 @@ var proto=new student('abc','25','mysore');
 var prototype=new customerPrototype(proto);
 var std=prototype.clone();
 std.say();
+proto.say();
+var s=prototype.clone();
+s.say();
 }
 run();
